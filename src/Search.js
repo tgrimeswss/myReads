@@ -8,7 +8,6 @@ class Search extends Component {
 
   render() {
     const {query,updateBook,updateQuery,theState} = this.props
-    //const wantToRead = books.filter(book => book.shelf === 'wantToRead')
       return(
         <div>
           <div className="search-books">
@@ -27,6 +26,7 @@ class Search extends Component {
               <Book
                 BOOKSHELF={theState.currentList}
                 updateBook={updateBook}
+                theState={this.props.theState}
               />
             </div>
           </div>
